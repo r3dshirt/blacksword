@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if recent_blog_list %}
+    {% for blog in recent_blog_list %}
+        <fieldset>
+        <h2>{{ blog.title }}</h2>
+        <p>
+        {{ blog.body }}
+        </p>
+        </fieldset>
+    {% endfor %}
+{% else %}
+    <p>No Posts at this time.</p>
+{% endif %}
+
+{% endblock %}
