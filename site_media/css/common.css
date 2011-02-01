@@ -14,6 +14,20 @@ p
     font: 12px helvetica;
 }
 
+body
+{
+    background-color: black;
+}
+
+#wrapper
+{
+    margin: 0 auto;
+    width: 1024px;
+    background-image: url('/site_media/images/layout/background.jpg');
+    background-repeat: no-repeat;
+    background-position:right top;
+}
+
 #navigation
 {
     height: 60px;
@@ -38,12 +52,12 @@ p
     margin-right: 10px;
     float: left;
     height: auto;
-    width: 80px;
+    width: 100px;
 }
 
 #content
 {
-
+    width: 100%;
 }
 
 #content h1
