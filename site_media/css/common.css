@@ -7,11 +7,13 @@ h1
 h2
 {
     font: 25px helvetica;
+    color: white;
 }
 
 p
 {
     font: 12px helvetica;
+    color: white;
 }
 
 body
@@ -25,7 +27,7 @@ body
     width: 1024px;
     background-image: url('/site_media/images/layout/background.jpg');
     background-repeat: no-repeat;
-    background-position:right top;
+    background-position: right top;
 }
 
 #navigation
@@ -36,7 +38,6 @@ body
 #navigation ul
 {
     list-style-type: none;
-    float: right;
 }
 
 #navigation li
@@ -46,9 +47,6 @@ body
 
 #sidebar
 {
-    border-style: dashed;
-    border-width: 2px;
-
     margin-right: 10px;
     float: left;
     height: auto;
