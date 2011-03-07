@@ -1,1 +1,29 @@
+{% extends "base.html" %}
 
+{% block content %}
+
+<h2>Events</h2>
+
+{% if events_list %}
+    {% for event in events_list %}
+        <fieldset>
+        <legend>{{ event.title }}</legend>
+        <h2>Location: {{ event.location }}</h2>
+        <p>
+        <strong>Date:</strong> {{ event.date }}<br />
+        <strong>Player Info</strong>{{ event.players }}
+        </p>
+
+        <hr />
+
+        <p>
+        {{ event.notes }}
+        </p>
+
+        </fieldset>
+    {% endfor %}
+{% else %}
+    <p>No Events found in database.</p>
+{% endif %}
+
+{% endblock %}
