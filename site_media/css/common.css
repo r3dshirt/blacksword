@@ -1,4 +1,3 @@
-
 h1
 {
     font: 35px helvetica;
@@ -14,8 +13,18 @@ p
     font: 12px helvetica;
 }
 
+#header
+{
+    border-style: dashed;
+    border-color: orange;
+    border-width: 2px;
+}
+
 #navigation
 {
+    border-style: dashed;
+    border-color: green;
+    border-width: 2px;
     height: 60px;
 }
 
@@ -23,6 +32,7 @@ p
 {
     list-style-type: none;
     float: right;
+    padding-right: 20px;
 }
 
 #navigation li
@@ -33,17 +43,19 @@ p
 #sidebar
 {
     border-style: dashed;
+    border-color: red;
     border-width: 2px;
-
     margin-right: 10px;
     float: left;
-    height: auto;
+    height: 300px;
     width: 80px;
 }
 
 #content
 {
-
+    border-style: dashed;
+    border-color: blue;
+    border-width: 2px;
 }
 
 #content h1
@@ -56,4 +68,3 @@ p
     margin-left: 10px;
     margin-bottom: 5px;
 }
-
