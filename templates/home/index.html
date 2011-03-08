@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block sidebar %}
+{{ block.super }}
+{% include "home/side-nav.html" %}
+{% endblock %}
+
 {% block content %}
 
 {% if recent_blog_list %}
