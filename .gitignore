@@ -1,0 +1,6 @@
+# List of files that git should ignore
+._*
+.DS_Store
+htdocs/tmp
+htdocs/pub
+*.pyc
