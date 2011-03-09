@@ -6,25 +6,25 @@ h1
 h2
 {
     font: 25px helvetica;
-    color: white;
+    /*color: white;*/
 }
 
 p
 {
     font: 12px helvetica;
-    color: white;
+    /*color: white;*/
 }
 
 body
 {
-    background-color: black;
+    /*background-color: black;*/
 }
 
 #wrapper
 {
     margin: 0 auto;
     width: 1024px;
-    background-image: url('/site_media/images/layout/background.jpg');
+    /*background-image: url('/site_media/images/layout/background.jpg'); */
     background-repeat: no-repeat;
     background-position: right top;
 }
