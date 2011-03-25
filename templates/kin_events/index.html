@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "layout/common.html" %}
 
 {% block content %}
 
@@ -10,8 +10,9 @@
         <legend>{{ event.title }}</legend>
         <h2>Location: {{ event.location }}</h2>
         <p>
-        <strong>Date:</strong> {{ event.date }}<br />
-        <strong>Player Info</strong>{{ event.players }}
+        <strong>Date:</strong> {{ event.date|date:"D d N Y" }}<br />
+        <strong>Time:</strong> {{ event.date|date:"g:i a" }}<br />
+        <strong>Player Info:</strong> {{ event.players }}
         </p>
 
         <hr />

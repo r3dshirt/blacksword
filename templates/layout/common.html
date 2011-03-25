@@ -1,0 +1,36 @@
+{% extends "layout/base.html" %}
+
+{% block base_title %}Test Website | {% block title %}{% endblock %}{% endblock %}
+
+
+{% block html_head %}
+{{ block.super }}
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="icon" href="/site_media/favicon.png" type="image/png" />
+<link rel="stylesheet" href="/site_media/css/common.css"  type="text/css" />
+{% endblock %}
+
+{% block navigation %}
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About Us</a></li>
+<li><a href="/admin/">Admin</a></li>
+</ul>
+{% endblock %}
+
+{% block sidebar %}
+{% if recent_event_list %}
+    <h2>Events</h2>
+    {% for event in recent_event_list %}
+        <p>
+        <strong>{{ event.title }}</strong><br />
+        {{ event.date|date:"D d N Y" }}
+        </p>
+        <hr />
+    {% endfor %}
+{% endif %}
+{% endblock %}
