@@ -2,14 +2,15 @@
 
 {% block content %}
 
+<h4>Latest Blog Entries</h4>
+
 {% if recent_blog_list %}
     {% for blog in recent_blog_list %}
-        <fieldset>
-        <h2>{{ blog.title }}</h2>
-        <p>
-        {{ blog.body }}
-        </p>
-        </fieldset>
+        <div class="blog-entry">
+        <h3>{{ blog.title }}</h3>
+        <p>{{ blog.body }}</p>
+        <hr />
+        </div>
     {% endfor %}
 {% else %}
     <p>No Posts at this time.</p>

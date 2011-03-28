@@ -24,13 +24,18 @@
 
 {% block sidebar %}
 {% if recent_event_list %}
-    <h2>Events</h2>
+    <h4>Upcoming Events</h4>
     {% for event in recent_event_list %}
+        <div class="upcoming-event">
         <p>
         <strong>{{ event.title }}</strong><br />
         {{ event.date|date:"D d N Y" }}
         </p>
         <hr />
+        </div>
     {% endfor %}
 {% endif %}
+
+<br style="clear: right;" />
+
 {% endblock %}
